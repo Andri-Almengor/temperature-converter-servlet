@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="650" viewBox="0 0 720 650">
+<rect width="100%" height="100%" fill="#f1f3f6"/>
+<defs><filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="10" flood-opacity=".16"/></filter></defs><rect x="98" y="108" width="450" height="382" rx="13" fill="#fff" filter="url(#shadow)"/>
+<text x="323" y="194" text-anchor="middle" font-family="Arial" font-size="34" font-weight="700" fill="#2f80ed">Temperature Converter</text>
+<text x="133" y="246" font-family="Arial" font-size="16" font-weight="700">Temperature</text>
+<rect x="133" y="258" width="380" height="44" rx="6" fill="#fff" stroke="#c9c9c9"/>
+<text x="146" y="286" font-family="Arial" font-size="16" fill="#111">12</text>
+<text x="133" y="337" font-family="Arial" font-size="16" font-weight="700">Conversion</text>
+<rect x="133" y="348" width="380" height="44" rx="6" fill="#fff" stroke="#287cff"/>
+<text x="150" y="376" font-family="Arial" font-size="16">Select a conversion</text>
+<path d="M500 366 l8 0 l-4 5 z" fill="#111"/><rect x="133" y="392" width="380" height="134" fill="#fff" stroke="#666"/>
+<rect x="134" y="393" width="378" height="27" fill="#2f72d4"/>
+<text x="150" y="412" font-family="Arial" font-size="16" fill="#fff">Select a conversion</text>
+<text x="150" y="438" font-family="Arial" font-size="16">Celsius → Fahrenheit</text>
+<text x="150" y="464" font-family="Arial" font-size="16">Fahrenheit → Celsius</text>
+<text x="150" y="490" font-family="Arial" font-size="16">Celsius → Kelvin</text>
+<text x="150" y="516" font-family="Arial" font-size="16">Kelvin → Celsius</text></svg>
