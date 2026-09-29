@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Temperature Converter</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+
+            background-color: white;
+
+            padding: 35px;
+
+            border-radius: 12px;
+
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            text-align: center;
+
+            color: #007bff;
+
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+
+            margin-bottom: 8px;
+
+            font-weight: bold;
+
+            color: #333;
+        }
+
+        input,
+        select {
+            width: 100%;
+
+            padding: 12px;
+
+            border: 1px solid #ccc;
+            border-radius: 6px;
+
+            font-size: 16px;
+        }
+
+        input:focus,
+        select:focus {
+            outline: none;
+
+            border-color: #007bff;
+
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+        }
+
+        .button {
+            width: 100%;
+
+            padding: 12px;
+
+            border: none;
+            border-radius: 6px;
+
+            background-color: #007bff;
+            color: white;
+
+            font-size: 16px;
+            font-weight: bold;
+
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Temperature Converter</h1>
+
+        <form method="POST"
+              action="TemperaturaServlet">
+
+            <div class="form-group">
+
+                <label for="temperatura">
+                    Temperature
+                </label>
+
+                <input
+                    id="temperatura"
+                    name="temperatura"
+                    type="number"
+                    step="any"
+                    placeholder="Enter temperature"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="conversion">
+                    Conversion
+                </label>
+
+                <select
+                    id="conversion"
+                    name="conversion"
+                    required>
+
+                    <option value="">
+                        Select a conversion
+                    </option>
+
+                    <option value="celsiusFahrenheit">
+                        Celsius → Fahrenheit
+                    </option>
+
+                    <option value="fahrenheitCelsius">
+                        Fahrenheit → Celsius
+                    </option>
+
+                    <option value="celsiusKelvin">
+                        Celsius → Kelvin
+                    </option>
+
+                    <option value="kelvinCelsius">
+                        Kelvin → Celsius
+                    </option>
+
+                </select>
+
+            </div>
+
+            <input
+                class="button"
+                type="submit"
+                value="Convert">
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
